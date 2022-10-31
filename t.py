@@ -1,4 +1,8 @@
-class Player:
+class Human:
+  def print_test(self):
+    print("I'm Human");
+
+class Player(Human):
   def __init__(self, name, age):
     self.name = name;
     self.age = age;
@@ -8,5 +12,6 @@ class Player:
 
 player = Player("jhun", 29);
 player.print_player();
+player.print_test();
 
     
